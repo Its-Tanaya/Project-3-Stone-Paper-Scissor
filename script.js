@@ -9,7 +9,6 @@ buttons.forEach(button => {
     const playerchoice = button.innerHTML;
     const word = playerchoice.split(' ')[1].toLowerCase(); // "Rock" → "rock"
     const computerchoice = choices[Math.floor(Math.random() * choices.length)];
-
     if (word === computerchoice) {
       result.textContent = "Draw";
     }
